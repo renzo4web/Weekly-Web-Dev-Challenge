@@ -1,19 +1,7 @@
-# title(){
-		
-		return this.options.title || this.options.name;
-	}
+# Emoji Rating
 
-## Supporting Scrimba
+> Part of the week one
 
-Since 2017, we have created over 20 free courses on Scrimba, and we're going to
-continue launching free courses. But to pay our bills, we have to charge once
-in a while. So if you've ever wanted to "give back" to Scrimba, you can do that by buying
-	one of our paid courses
+## How i build ?
 
-- [Become a professional React developer](https://scrimba.com/course/greact)
-- [The Responsive Web Design Bootcamp](https://scrimba.com/course/gresponsive)
-- [The Ultimate JavaScript Bootcamp](https://scrimba.com/course/gjavascript)
-
-	It would also mean the world to us if you share the courses.  
-
-Happy Coding!
+**I used the keypress method to match the keyboard number with an array of emojis , for example if the the user press the key number 2 the array on index = 2 is selected and it's display**
