@@ -1,0 +1,50 @@
+html,
+body {
+  margin: 20px;
+  padding: 0;
+  font-family: Karla;
+}
+*:focus {
+  outline: 0;
+}
+
+#box {
+  padding: 10px;
+  display: block;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  background: #ecf2ff;
+  border-radius: 30px;
+  font-size: 30px;
+  transition: all 250ms;
+}
+
+#emoji-container {
+  font-size: 50px;
+}
+
+#box:focus {
+  background: #cfdfff;
+  border-radius: 30px;
+  transition: all 250ms;
+}
+
+#help-text {
+  display: none;
+  text-align: center;
+}
+
+#box:focus #help-text {
+  border-radius: 30px;
+  transition: all 250ms;
+  display: block;
+}
+
+#box :active {
+  background-color: aquamarine;
+}
+
+footer {
+  text-align: center;
+}
