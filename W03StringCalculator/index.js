@@ -35,39 +35,42 @@ function calculator(ArrayOfvalues) {
   }
 
   let g = 0;
+  let multiply = 0
 
   for (let index = 0; index < calc.length; index++) {
-    if (calc[index] === '+') {
-      g += calc[index - 1];
+
+    
+    if (calc[index] === '*' || calc[index-1] === '*' ) {
+      multiply += calc[index-1] * calc[index+1] ;
+      //calc.splice(calc[index + 1])
+      calc.splice((index-1), 2);
+    }else if (calc[index+1] === '+' || calc[index-1] === '+' ) {
+      g += calc[index];
       //calc.splice(calc[index + 1]);
-      //calc.splice([index], 1);
-    } else if (calc[index] === '-') {
-      calc[index - 1] - calc[index + 1];
-      calc.splice([index], 1);
-    } else if (calc[index] === '*') {
-      calc[index - 1] * calc[index + 1];
-      calc.splice([index], 1);
-    } else if (calc[index] === '/') {
-      calc[index - 1] / calc[index + 1];
-      calc.splice([index], 1);
+      calc.splice(index, 1);
+    }else if (calc[index+1] === '-' || calc[index-1] === '-' ) {
+      g -= calc[index];
+      //calc.splice(calc[index + 1]);
+      calc.splice(index, 1);
     }
+
+      
+
+
+
+   
   }
 
-  console.log(g, calc);
+  console.log(g, multiply,calc);
 
-  solutionDisplay.innerHTML = ``;
+  solutionDisplay.innerHTML = g+multiply;
 }
 
-function operatorChecker(a, b) {
-  if (index === '+') {
-    return '' + '';
-  } else if (index === '-') {
-    return '' - '';
-  } else if (index === '/') {
-    return '' / '';
-  } else if (index === '*') {
-    return '' * '';
-  }
+function operatorChecker(rigthOperator, leftOperator,num) {
+
+  return rigthOperator * leftOperator
+
+ 
 }
 
 /*
