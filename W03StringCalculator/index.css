@@ -9,9 +9,12 @@ html, body {
         Vertically Stack 
         & Horizontally Center contents
     */
+    width: 800;
+    margin: 0 auto;
 }
 
 #equation-field {
+  
     text-align: center;
     font-size: 2rem;
     background-color: wheat;
@@ -19,6 +22,12 @@ html, body {
     margin: 0.5rem;
     border-radius: 0.3rem;
     width: 10rem;
+
+}
+
+.container-input{
+   text-align:center ;
+   margin: 20px;
 }
 
 #solve-button {
@@ -29,15 +38,16 @@ html, body {
     padding: 0.3rem 1rem;
     text-align: center;
     cursor: pointer;
-    display: inline-block;
-    margin: 0.5rem;
     width: 10rem;
     outline: none;
+    margin: 10px 0;
 }
 
 
 #solution-display {
     display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
 }
 
 #solution-display > .equation-component {
@@ -45,4 +55,5 @@ html, body {
     color: white;
     font-size: 2rem;
     padding: 0.1rem 1rem;
+
 }
