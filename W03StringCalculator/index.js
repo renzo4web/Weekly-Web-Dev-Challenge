@@ -5,9 +5,6 @@ const solutionDisplay = document.getElementById('solution-display');
 
 
 
-
-
-
 solveButton.addEventListener('click', function () {
   // Clears the solution contents on each click
   solutionDisplay.innerHTML = ``;
