@@ -1,0 +1,38 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: lemonchiffon;
+    text-align: center;
+    color: grey;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 5px;
+  justify-items: center;
+  align-items: center;
+}
+
+.movie h2 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.movie{
+    color: #000;
+    width: 250px;
+    height: 250px;
+    background-color: #eae3af;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0px;
+    border-radius:5% 
+}
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+   box-shadow: 0 15px 8px 8px rgba(0,0,0,0.20);
+}
