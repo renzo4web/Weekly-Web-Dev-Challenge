@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+}
+
+#btn {
+    position: absolute;
+  background-color: red;
+  border-radius: 1em;
+  cursor: pointer;
+  font-size: 3rem;
+  padding: 0.5em 2em;
+  outline: none;
+  z-index: 2;
+}
+
+#btn:active {
+  transform: scale(0.94);
+}
+
+.emojis-container {
+    z-index: 1;
+}
+
+.emojis-container ul {
+    width: 100%;
+    line-height: 3;
+    font-size: 10rem;
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-flow: wrap;
+  list-style: none;
+  justify-content: space-around;
+}
+
+
+ul li {
+    margin: .5em;
+    text-shadow: 1px 25px;
+}
+
+.shake {
+  line-height: 0;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  transform-origin: center;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.blink {
+  animation: blinker 1s linear infinite;
+}
+
+.hide {
+    display: none;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+    background-color: rgb(68, 0, 255);
+  }
+}
